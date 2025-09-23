@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-const PORT = 5000; // backend will run on port 5000
+const PORT = 5000;
 
-// Middleware (helps to parse JSON requests)
+// Middleware to parse JSON
 app.use(express.json());
 
-// Example route
+// Test route
 app.get("/", (req, res) => {
   res.send("Hello from Express Backend 🚀");
 });
